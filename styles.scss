@@ -1,0 +1,462 @@
+
+
+
+@mixin sudo{
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
+}
+
+@mixin c1 {
+    background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+@mixin c2 {
+    background: #9796f0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
+}
+@mixin c3 {
+    background: #FFE000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+@mixin c4 {
+    background: #ffe259;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+@mixin c5 {
+    background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFE000, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFE000, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+$white:white;
+$black:black;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   // @include sudo;
+  // @include c1;
+  
+ 
+    animation: clrs 20s infinite linear;
+    color: red;
+    
+}
+
+
+/*nav bar stylings*/
+#ul-nav li a{
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+}
+
+.snd{
+    animation: clrs 20s infinite linear;
+}
+
+
+
+
+.nav-wrapper{
+    animation: clrs 20s infinite linear;
+}
+
+/*about me image stylings*/
+.left-img{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+
+/*educational section image stylings*/
+
+.sah-pic{
+    margin-top: 5rem;
+}
+.vpuc{
+    margin-top: 5rem;
+}
+.str{
+    margin-top:6rem;
+}
+
+
+/*cards styling*/
+
+
+.card-div{
+    position: relative;
+    
+}
+
+.mrr{
+    margin-right: 6rem;
+}
+
+
+
+
+
+/*first card*/
+.card
+{
+    position: absolute;
+    
+    width: 300px;
+    height: 400px;
+    background: #262626;
+    overflow: hidden;
+}
+.card .imgBx,
+.card .details 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx
+{
+    top: 0;
+    left: 0;
+}
+.card:hover .imgBx
+{
+    top: 0;
+    left: -100%;
+}
+.card .imgBx img
+{
+    width: 100%;
+}
+.card .details
+{
+    animation: clrs 20s infinite linear;
+    top: 0;
+    left: 100%;
+    padding: 30px 30px;
+}
+.card:hover .details
+{
+    top: 0;
+    left: 0;
+}
+.card .details h4
+{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    
+}
+.card .details p
+{
+    margin: 20px 0 0;
+    color: #fff;
+}
+/*second card*/
+
+.mt{
+    margin-top:35%;
+}
+
+.mt1{
+    margin-top:54%;
+}
+
+/*third card*/
+.card .details1
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .details1
+{
+    animation: clrs 20s infinite linear;
+    top: 0;
+    left: 100%;
+    padding: 0 30px;
+}
+.card:hover .details1
+{
+    top: 0;
+    left: 0;
+}
+.card .details1 h4
+{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    
+}
+.card .details1 p
+{
+    margin: 20px 0 0;
+    color: #fff;
+}
+
+
+
+/*skills section*/
+
+.mov{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+
+.spn1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    display: block;
+    margin-top:1rem;
+}
+
+
+/*projects section*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.container11
+{
+	max-width: 1000px;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:0;
+}
+.car
+{
+	position: relative;
+	margin: 20px 0;
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: perspective(2000px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 20px rgba(0,0,0,.5);
+	transition: 1s;
+}
+.car:hover
+{
+	z-index: 10000;
+	transform: perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+
+.car .imgBox
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	position: relative;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s cubic-bezier(.15,1.7,.84,.58);
+	background: #111;
+}
+.car .imgBox img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+.car:hover .imgBox
+{
+	transform: rotateY(-135deg);
+}
+.car .details
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 20px;
+    z-index: -1;
+    overflow: hidden;
+}
+.car .details p{
+    font-size:1.2rem;
+}
+.car .details h2{
+    font-weight: 700;
+    font-size:2rem;
+}
+
+/*upcoming projects*/
+
+.mov1{
+    margin-right: 9.5rem;
+}
+
+.tp{
+    font-size:1.2rem;
+
+}
+
+.tp{
+    width: 4rem;
+    margin-right: 0;
+}
+
+
+
+/*personal details card*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+
+@media only screen and (max-width:450px){
+    .left-img{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-left: 7rem;
+        margin-bottom: 2rem;
+        
+    }
+    .sah-pic{
+        margin-top: 0;
+    }
+
+    .vpuc{
+        margin-top: 0;
+    }
+
+    .str{
+        margin-top:0;
+    }
+
+    .card{
+        width: 350px;
+        
+
+    }
+   .mov{
+        margin-right:11rem;
+        display: block;
+    }
+    
+    .mov{
+        margin-right:11rem;
+        margin-left:2rem;
+        display: block;
+    }
+
+    .mymar{
+        margin-left:4.0rem;
+    }
+   
+    
+}
+
+
+
+
+/*animations*/
+
+
+@keyframes clrs{
+    0%{
+        background: #4DA0B0;
+
+    }
+    10%{
+        background: #b59ff1;
+
+    }
+    20%{
+        background: #9796f0;
+
+
+    }
+    30%{
+        background: #ec98a3; 
+
+
+    }
+    40%{
+        background: #71bdd4;
+       
+
+    }
+    50%{
+        background:rosybrown; 
+
+    }
+    60%{
+        background: #12bd89;
+
+    }
+    70%{
+        background: #ec83e7;
+
+    }
+    80%{
+        background: #4DA0B0;
+
+
+    }
+    90%{
+        background: #5edf7a; 
+
+    }
+    100%{
+        background: #ebc95a;
+
+    }
+
+}
+
+
+
+
